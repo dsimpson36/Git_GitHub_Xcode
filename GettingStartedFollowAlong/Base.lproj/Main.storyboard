@@ -55,13 +55,19 @@
                                     <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DP-1L-JQs"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLO-KZ-IXj">
+                                <rect key="frame" x="80" y="341" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hFO-KI-6im"/>
+                                </connections>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7a-V9-imR">
-                                <rect key="frame" x="158" y="276" width="99" height="30"/>
+                                <rect key="frame" x="158" y="196" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Olivia's Button"/>
                                 <connections>
                                     <action selector="OliviasBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d10-z0-Wjj"/>
-                                    <segue destination="p0C-zg-i0f" kind="presentation" id="lOg-cr-ZdE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,27 +88,14 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="Switch" destination="8bC-Xf-vdC" id="Q4f-dn-L2r"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="2tx-rB-MlU"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="yyG-Sz-AMw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17" y="155"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jxA-EK-x22">
-            <objects>
-                <viewController id="p0C-zg-i0f" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Eb6-es-ZLw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29187034070000001" green="1" blue="0.64465904190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="uiN-bj-aXb"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JNB-7V-KV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="825" y="155"/>
         </scene>
     </scenes>
 </document>
