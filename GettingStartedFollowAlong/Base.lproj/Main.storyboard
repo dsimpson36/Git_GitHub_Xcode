@@ -47,20 +47,27 @@
                                     <constraint firstItem="aLY-V0-n7j" firstAttribute="top" secondItem="n6K-li-zEe" secondAttribute="top" id="p2N-eO-dWW"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7a-V9-imR">
-                                <rect key="frame" x="129" y="245" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Olivia's Button"/>
-                                <connections>
-                                    <action selector="OliviasBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d10-z0-Wjj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwR-uw-Yo4">
                                 <rect key="frame" x="149" y="603" width="82" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Red"/>
                                 <connections>
                                     <action selector="redButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6DP-1L-JQs"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLO-KZ-IXj">
+                                <rect key="frame" x="80" y="341" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hFO-KI-6im"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7a-V9-imR">
+                                <rect key="frame" x="158" y="196" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Olivia's Button"/>
+                                <connections>
+                                    <action selector="OliviasBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d10-z0-Wjj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,7 +88,9 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="Switch" destination="8bC-Xf-vdC" id="Q4f-dn-L2r"/>
                         <outlet property="backGround" destination="8bC-Xf-vdC" id="2tx-rB-MlU"/>
+                        <outlet property="mainView" destination="8bC-Xf-vdC" id="yyG-Sz-AMw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
