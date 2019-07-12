@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet var backGround: UIView!
+    @IBAction func redButton(_ sender: UIButton) {
+        backGround.backgroundColor = UIColor.red    }
     @IBAction func OliviasBtn(_ sender: UIButton) {
         
     }
